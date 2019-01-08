@@ -1,16 +1,18 @@
-import QtQuick 2.0
+import QtQuick 2.12
 
 Rectangle {
   property real itemSize: 48
   property string itemColor: "green"
   width: itemSize
-  height: (itemSize / 2) * 0.4
+  height: (itemSize / 2) * 0.4 + leftStud.height
+  color: "blue"
 
   Rectangle {
     id: baseTile
     width: parent.width
-    height: parent.height
+    height: parent.height - leftStud.height
     color: itemColor
+    anchors.bottom: parent.bottom
     border.width: 1
     border.color: "black"
   }

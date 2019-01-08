@@ -6,6 +6,8 @@
         <file>PlusIcon.qml</file>
         <file>Tile2x1.qml</file>
         <file>CenterStudTile2x1.qml</file>
-        <file>TIle2x1H.qml</file>
+        <file>Tile2x1H.qml</file>
+        <file>ToolBar.qml</file>
+        <file>MenuIcon.qml</file>
     </qresource>
 </RCC>

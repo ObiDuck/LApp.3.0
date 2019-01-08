@@ -10,6 +10,6 @@ Window {
   visibility: Window.FullScreen
   flags: Qt.FramelessWindowHint | Qt.WindowMinimizeButtonHint | Qt.Window | Qt.WindowMaximizeButtonHint | Qt.MaximizeUsingFullscreenGeometryHint
 
-  //TIle2x1H { itemSize: 48; x: 400; y: 400 }
-  WindowControls { color: "#FBC02D"; width: parent.width; height: 36 ; anchors.right: parent.right; anchors.top: parent.top }
+  WindowControls { id: windowControlBar; backColor: "#FBC02D"; width: parent.width; height: 36 ; anchors.right: parent.right; anchors.top: parent.top }
+  ToolBar { backColor: "#FFEB3B"; width: parent.width; height: 36; anchors.top: windowControlBar.bottom }
 }
