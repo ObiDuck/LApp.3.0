@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>WindowControls.qml</file>
+        <file>Tile1x1.qml</file>
+        <file>PlusIcon.qml</file>
+        <file>Tile2x1.qml</file>
+        <file>CenterStudTile2x1.qml</file>
+        <file>TIle2x1H.qml</file>
+    </qresource>
+</RCC>
