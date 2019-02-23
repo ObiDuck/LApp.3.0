@@ -7,7 +7,18 @@
         <file>Tile2x1.qml</file>
         <file>CenterStudTile2x1.qml</file>
         <file>Tile2x1H.qml</file>
-        <file>ToolBar.qml</file>
+        <file>MyToolBar.qml</file>
         <file>MenuIcon.qml</file>
+        <file>Tile1x1H.qml</file>
+        <file>Tile3x1H.qml</file>
+        <file>FilterIcon.qml</file>
+        <file>BaseTileH.qml</file>
+        <file>Stud.qml</file>
+        <file>roboto.regular.ttf</file>
+        <file>OpenNewDatabaseButton.qml</file>
+        <file>1.jpg</file>
+        <file>OpenRecentDatabase.qml</file>
+        <file>FirstRectangle.qml</file>
+        <file>DetailFrame.qml</file>
     </qresource>
 </RCC>

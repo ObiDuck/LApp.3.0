@@ -11,6 +11,7 @@ Rectangle {
     id: topTile
     itemColor: itemsColor
     anchors.bottom: midTile.top//parent.top
+    anchors.bottomMargin:  border.width
     itemSize: parent.height  - border.width - border.width
   }
 
@@ -28,6 +29,7 @@ Rectangle {
     color: backColor
     itemColor: itemsColor
     anchors.top: midTile.bottom//parent.bottom
+    anchors.topMargin: border.width
     itemSize: parent.height - border.width - border.width
   }
 }

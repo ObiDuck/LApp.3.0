@@ -13,6 +13,7 @@ Rectangle {
     height: parent.height
     anchors.right: closeButton.left
     anchors.bottom: parent.bottom
+    anchors.bottomMargin: 2
     anchors.rightMargin: 4
     background: Tile2x1H { color: backColor; itemSize: parent.height - border.width - border.width; itemColor: "orange"; anchors.bottom: parent.bottom}
     //background: Rectangle {color: "red"}

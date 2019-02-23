@@ -1,45 +1,51 @@
 import QtQuick 2.12
+import QtGraphicalEffects 1.12
 
 Rectangle {
   property real itemSize: 48
   property string itemColor: "green"
   width: itemSize
-  height: (itemSize / 2) * 0.4 + leftStud.height
-  color: "blue"
+  height: baseTile.height + leftStud.height - leftStud.border.width
+  color: "yellow"
 
-  Rectangle {
+  BaseTileH {
     id: baseTile
-    width: parent.width
-    height: parent.height - leftStud.height
+    simpleWidth: itemSize
+    numberOfStuds: 2
     color: itemColor
     anchors.bottom: parent.bottom
-    border.width: 1
-    border.color: "black"
+    anchors.horizontalCenter: parent.horizontalCenter
   }
 
-  Rectangle {
+  DropShadow {
+    anchors.fill: baseTile
+    horizontalOffset: 1
+    verticalOffset: 1
+    radius: 8.0
+    samples: 17
+    color: "#80000000"
+    source: baseTile
+  }
+
+  Stud {
     id: leftStud
-    width: (itemSize / 2) * 0.6
-    height: (itemSize / 2) * 0.2
+    simpleWidth: itemSize
+    numberOfStuds: 2
     color: itemColor
-    border.width: 1
-    border.color: "black"
+    anchors.left: baseTile.left
+    anchors.leftMargin: leftStud.gap
     anchors.bottom: baseTile.top
     anchors.bottomMargin: -baseTile.border.width
-    anchors.left: baseTile.left
-    anchors.leftMargin: (itemSize / 2) * 0.25
   }
 
-  Rectangle {
+  Stud {
     id: rightStud
-    width: (itemSize / 2) * 0.6
-    height: (itemSize / 2) * 0.2
+    simpleWidth: itemSize
+    numberOfStuds: 2
     color: itemColor
-    border.width: 1
-    border.color: "black"
+    anchors.right: baseTile.right
+    anchors.rightMargin: rightStud.gap
     anchors.bottom: baseTile.top
     anchors.bottomMargin: -baseTile.border.width
-    anchors.right: baseTile.right
-    anchors.rightMargin: (itemSize / 2) * 0.25
   }
 }
